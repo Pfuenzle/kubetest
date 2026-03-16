@@ -30,8 +30,7 @@ privatebin:
     pvc:
       accessModes:
         - ReadWriteOnce
-      requests:
-        storage: 5Gi
+      requests: 5Gi
       storageClass: longhorn
 
   service:
