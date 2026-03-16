@@ -13,7 +13,7 @@ spec:
       releaseName: privatebin
   destination:
     server: https://kubernetes.default.svc
-    namespace: privatebin
+    namespace: blyatflix-public
   syncPolicy:
     automated:
       prune: true
