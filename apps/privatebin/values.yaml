@@ -1,6 +1,9 @@
 privatebin:
   fullnameOverride: privatebin
 
+  podAnnotations:
+    configmap.reloader.stakater.com/reload: "privatebin-configs"
+
   configs:
     conf.php: |
       [main]
