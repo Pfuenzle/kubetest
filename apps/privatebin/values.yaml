@@ -28,8 +28,7 @@ privatebin:
   controller:
     kind: StatefulSet
     pvc:
-      accessModes:
-        - ReadWriteOnce
+      accessModes: ReadWriteOnce
       requests: 5Gi
       storageClass: longhorn
 
