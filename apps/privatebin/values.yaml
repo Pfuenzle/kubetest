@@ -18,7 +18,7 @@ privatebin:
       syntaxhighlightingtheme = "sons-of-obsidian"
       sizelimit = 50000000
       template = "bootstrap"
-      expire = "1month"
+      expire = "1week"
       templateselection = true
       notice = "Files may be deleted at any time"
       languageselection = true
