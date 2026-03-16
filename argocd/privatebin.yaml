@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: privatebin
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Pfuenzle/kubetest.git
+    targetRevision: HEAD
+    path: apps/privatebin
+    helm:
+      releaseName: privatebin
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: privatebin
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

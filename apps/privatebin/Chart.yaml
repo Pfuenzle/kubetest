@@ -1,0 +1,11 @@
+apiVersion: v2
+name: privatebin-wrapper
+description: Wrapper chart for PrivateBin deployment
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+
+dependencies:
+  - name: privatebin
+    version: 1.2.0
+    repository: https://privatebin.github.io/helm-chart
